@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="#">Voltar</a>
+        </nav>
+        <h1>Compras da Semana</h1>
+
+        <form method="post" id="form-add-item">
+            <div id="add-item" class="flex flex-column gap-1">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Adicione um novo item" name="new-item" id="new-item">
+                </div>
+                <div class="input-wrapper">
+                    <button type="submit">Adicionar item</button>
+                </div>
+            </div>
+        </form>
+        <div id="list-container">
+            <ul id="item-list">
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

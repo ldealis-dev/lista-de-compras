@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color-primary: #F4F5FB;
+    --bg-color-secondary: #FFFFFF;
+    --color-brand: #CA3884;
+    --color-hover: #A52C6B;
+    --color-danger: #C93847;
+
+    --content-primary: #080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    --always-white: #FFFFFF;
+
+    --border-primary: #D1D5DB;
+    --border-secondary: #B9C2D0;
+
+    --px-lg: 2rem;
+    --py-base: 0.75rem;
+    --py-lg: 1rem;
+    --py-xl: 1rem;
+
+}
+
+body {
+    background-color: var(--bg-color-primary);
+}
