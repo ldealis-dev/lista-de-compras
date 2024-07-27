@@ -14,32 +14,41 @@
 
 <body>
     <div class="container">
-        <nav>
-            <a href="#">Voltar</a>
-        </nav>
-        <h1 class="title">Compras da Semana</h1>
+        <div class="logo desktop-only">
+            <img src="./assets/logo.svg" alt="logo quicklist">
+        </div>
+        <header>
+            <nav>
+                <a href="#"><- Voltar </a>
+            </nav>
+            <h1 class="title">Compras da semana</h1>
+        </header>
 
         <form method="post" id="form-add-item">
             <div id="add-item" class="flex flex-column gap-1">
                 <div class="input-wrapper">
                     <input type="text" placeholder="Adicione um novo item" name="new-item" id="new-item">
                 </div>
-                <div class="input-wrapper">
+                <div class="button-wrapper">
                     <button type="submit">Adicionar item</button>
                 </div>
             </div>
         </form>
         <div id="list-container">
             <ul id="item-list">
-                <li>
-                    <span>Abc</span>
-                    <img src="./assets/icons/trash-bin.png">
-                </li>
-                <li>
-                    <span>Abc</span>
-                    <img src="./assets/icons/trash-bin.png">
-                </li>
             </ul>
+        </div>
+
+        <div id="alert">
+            <span>
+                <img src="./assets/icons/warning-circle-white.svg" alt="">
+            </span>
+            <strong>
+                O item foi removido da lista
+            </strong>
+            <span class="alert-close">
+                <img src="./assets/icons/delete-small-white.svg" alt="">
+            </span>
         </div>
 
     </div>

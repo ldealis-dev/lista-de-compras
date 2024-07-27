@@ -2,6 +2,8 @@
 const form = document.getElementById('form-add-item');
 const newItemInput = document.getElementById('new-item');
 const itemListElement = document.getElementById('item-list');
+const alertMessage = document.getElementById('alert');
+const iconCloseAlert = document.querySelector('.alert-close');
 
 form.onsubmit = (event) => {
     event.preventDefault();
@@ -34,5 +36,10 @@ function addItemToList(itemName) {
  * @param {element} event 
  */
 function removeItemFromList(event) {
+    alertMessage.style.display = 'flex';
     event.parentNode.remove();
 }
+
+iconCloseAlert.addEventListener('click', () => {
+    alertMessage.style.display = 'none';
+})
